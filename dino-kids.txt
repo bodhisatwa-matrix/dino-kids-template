@@ -1,0 +1,12 @@
+Wrok:
+A simple ubox experience, with an intro, then experience screen and then the result.
+Implement the animation for the bubles and the number in the main window (pantalla principle) should appars random and exploit when you click on the number with animations in most of pieces.
+the interaction will be with kids jumping to the number that appears in the screen.
+
+
+
+Translation:
+Spanish:- colocate sober el numero que presenta la pantalla para explotar las burbujas y ganar puntos.
+English:- Stand on the number on the screen to pop the bubbles and earn points.
+
+

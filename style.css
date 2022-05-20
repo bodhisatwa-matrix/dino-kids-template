@@ -6,8 +6,9 @@
 
 body {
   font-family: dino-font;
-  overflow: hidden;
-  height: 100vh;
+  /* overflow: hidden;
+  height: 100vh; */
+  background-color: #f2edd3;
 }
 
 /* Fonts */
@@ -23,18 +24,234 @@ body {
   font-weight: 100;
   text-align: center;
   font-size: 60px;
-  /* max-width: 100px; */
+  display: none;
 }
 
 #clockdiv > div {
-  /* padding: 2px; */
   color: #000;
   display: inline-block;
 }
 
 #clockdiv div > span {
-  /* padding: 5px; */
   color: #000;
   display: inline-block;
 }
 
+.start {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+}
+.game {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+}
+.score {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+.start > .green_top_left {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.start > .yellow_top_right {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.start > .green_bottom_left {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.start > .green_bottom_right {
+  position: absolute;
+  right: 10%;
+  bottom: 0;
+  z-index: 1;
+}
+.start >.orange_bottom_right {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.start > .yellow_bottom_right {
+  position: absolute;
+  right: 22%;
+  bottom: 0;
+  z-index: 2;
+}
+
+.game > .green_top_left {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.game > .yellow_top_right {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.game > .green_bottom_left {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.game > .green_bottom_right {
+  position: absolute;
+  right: 10%;
+  bottom: 0;
+  z-index: 1;
+}
+.game >.orange_bottom_right {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.game > .yellow_bottom_right {
+  position: absolute;
+  right: 22%;
+  bottom: 0;
+  z-index: 2;
+}
+
+.score > .green_top_left {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.score > .orange_top {
+  position: absolute;
+  top: 0;
+  left: 30%;
+}
+.score > .yellow_top_right {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.score > .green_bottom_left {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.score > .orange_bottom_right {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.score > .yellow_bottom_right {
+  position: absolute;
+  bottom: 0;
+  right: 10%;
+  z-index: 1;
+}
+.score > .green_bottom_right {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.start > .content_1 {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.start > .content_1 > h1 {
+  color: #199549;
+  font-size: 12em;
+  font-weight: 300;
+}
+.start > .content_1 > p {
+  color: #fe6e46;
+  font-size: 5em;
+  font-weight: 300;
+}
+.logo1, .logo2 {
+  position: absolute;
+  top: -45px;
+  right: -40px;
+  transform: scale(0.8);
+}
+.game > .content_2 {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+  text-align: center;
+}
+.game > .content_2 > h1 {
+  color: #199549;
+  font-size: 8em;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+.game > .content_2 > .number {
+  color: #fe6e46;
+  font-size: 32em;
+  font-weight: 900;
+}
+.game > .content_2 > .points_container {
+  display: flex;
+  left: 50%;
+  transform: translateX(25%);
+  gap: 5em;
+}
+.game > .content_2 > .points_container > .points > p:last-child, .game > .content_2 > .points_container > .time > p:last-child{
+  color: #000;
+  font-size: 5em;
+  font-weight: 600;
+}
+.game > .content_2 > .points_container > .time > p:first-child, .game > .content_2 > .points_container > .points > p:first-child{
+  color: #e52823;
+  font-size: 5em;
+  font-weight: 600;
+}
+
+/* third screen */
+.score > .logo3 {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.score > .content_3 {
+  width: 100%;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+  text-align: center;
+}
+.score > .content_3 > h1 {
+  width: 100%;
+  color: #199549;
+  font-size: 10em;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+.score > .content_3 > .points_container > .points > p:last-child, .score > .content_3 > .points_container > .time > p:last-child{
+  color: #000;
+  font-size: 5em;
+  font-weight: 600;
+}
+.score > .content_3 > .points_container > .time > p:first-child, .score > .content_3 > .points_container > .points > p:first-child{
+  color: #e52823;
+  font-size: 5em;
+  font-weight: 600;
+}
+.score > .content_3 > .points_container {
+  display: flex;
+  left: 50%;
+  transform: translateX(35%);
+  gap: 5em;
+}
