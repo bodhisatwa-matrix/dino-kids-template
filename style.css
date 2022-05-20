@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: dino-font;
+  overflow: hidden;
+  height: 100vh;
+}
+
+/* Fonts */
+/** custom font **/
+@font-face {
+  font-family: dino-font;
+  src: url("./assets/fonts/Boogaloo-Regular.ttf");
+}
+#clockdiv {
+  font-family: dino-font;
+  color: #fff;
+  display: inline-block;
+  font-weight: 100;
+  text-align: center;
+  font-size: 60px;
+  /* max-width: 100px; */
+}
+
+#clockdiv > div {
+  /* padding: 2px; */
+  color: #000;
+  display: inline-block;
+}
+
+#clockdiv div > span {
+  /* padding: 5px; */
+  color: #000;
+  display: inline-block;
+}
+
