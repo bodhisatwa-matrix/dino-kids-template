@@ -48,11 +48,13 @@ body {
   width: 100%;
   height: 100vh;
   overflow: hidden;
+  display: none;
 }
 .score {
   position: relative;
   width: 100%;
   height: 100vh;
+  display: none;
   overflow: hidden;
 }
 .start > .green_top_left {
@@ -173,6 +175,37 @@ body {
   color: #fe6e46;
   font-size: 5em;
   font-weight: 300;
+}
+.start > .content_1 > #blink {
+  font-size: 5em;
+  font-weight: 300;
+  color: #000;
+  -webkit-animation: 2s linear infinite condemned_blink_effect; /* for Safari 4.0 - 8.0 */
+  animation: 2s linear infinite condemned_blink_effect;
+}
+/* for Safari 4.0 - 8.0 */
+@-webkit-keyframes condemned_blink_effect {
+  0% {
+    visibility: hidden;
+  }
+  50% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+
+@keyframes condemned_blink_effect {
+  0% {
+    visibility: hidden;
+  }
+  50% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
 }
 .logo1, .logo2 {
   position: absolute;
